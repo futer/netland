@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Helvetica Nue Lt Pro 75';
+  src: url('myfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Nue Lt Pro 55';
+  src: url('/fonts/HelveticaNeueLTPro-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Nue Lt Pro 85';
+  src: url('myfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('myfont.ttf') format('truetype');
+}

@@ -1,0 +1,54 @@
+.container {
+    margin: 0 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu .logo img{
+    height: 170px;
+}
+
+.status {
+    margin-top: 75px;
+    color: #FFF;
+    display: flex;
+}
+
+.status .logo{
+    width: 90px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.date{
+    display: block;
+    margin-left: 15px;
+    color: #FFF;
+}
+
+.date p {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.date p:last-child {
+    font-size: 16px;
+    font-family: 'HelveticaNeueLT Pro 55 Roman', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+}
+
+.on, .off {
+    margin-top: -10px;
+    height: 75px;
+}
+
+@media (max-width: 850px) {
+    .menu .logo img{
+        display: none;
+    }
+}

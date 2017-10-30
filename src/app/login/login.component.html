@@ -1,0 +1,16 @@
+<section class="login">
+
+  <div class="desc">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>explicabo voluptatem quasi fugit accusamus harum harum dolor </p>
+    <p>molestias cumque obcaecati similique earum magnam.</p>
+  </div>
+
+  <form class="login-form">
+    <input type="text" name="username" [(ngModel)]="username" required>
+    <input type="password" name="password" [(ngModel)]="password" required>
+
+    <input type="submit" (click)="login(username,password)" value="Zaloguj">
+  </form>
+
+</section>

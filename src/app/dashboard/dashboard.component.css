@@ -1,0 +1,171 @@
+.dashboard {
+    margin: -40px 0 -40px 20px;
+}
+
+.dashboard::before, .dashboard::after {
+    position: absolute;
+    top:0;
+}
+
+.dashboard::before {
+    left: 0;
+    content: '';
+    background: url('../../assets/images/png/operacja_left.png');
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100vh;
+    animation: pulse 5s infinite;
+}
+
+.dashboard::after {
+    right: -5px;
+    content: '';
+    background: url('../../assets/images/png/operacja_right.png');
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100vh;
+    animation: pulse 5s infinite;
+}
+
+.login-info p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b7d4fd;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.login-info p:last-child {
+    font-size: 27px;
+    font-weight: bold;
+    color: #FFF;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+}
+
+.dash-item {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.list-p, .scene, .controll, .media-pacs {
+    width: 167px;
+    height: 167px;
+    margin: auto;
+}
+
+.list-p {
+    position: relative;
+    background: url('../../assets/images/svg/_butt_lista_pacjentow.svg');
+    background-repeat: no-repeat;
+}
+
+.list-p:active::before  {
+    content: '';
+    border: 4px solid rgba(0, 114, 145, .2);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse-item 400ms ease-out;
+}
+
+.scene {
+    position: relative;
+    background: url('../../assets/images/svg/_butt_sceny.svg');
+    background-repeat: no-repeat;
+}
+
+.scene:active::before  {
+    content: '';
+    border: 4px solid rgba(87, 180, 155, .2);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse-item 400ms ease-out;
+}
+
+.controll {
+    position: relative;
+    background: url('../../assets/images/svg/_butt_sterowanie.svg');
+    background-repeat: no-repeat;
+}
+
+.controll:active::before  {
+    content: '';
+    border: 4px solid rgba(252, 105, 101, .2);
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulse-item 400ms ease-out;
+}
+
+.media-pacs {
+    position: relative;
+    background: url('../../assets/images/svg/_butt_media.svg');
+    background-repeat: no-repeat;
+}
+
+.media-pacs:active::before {
+    content: '';
+    border: 4px solid rgba(127, 203, 226, .2);
+    opacity: 0;
+    border-radius: 50%;
+    animation: pulse-item 400ms ease-out;
+}
+
+.end-op {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 70%;
+    width: 20%;
+    background: #b4070c;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 40px 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-item {
+  from {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    left: 0;
+    top: 0;
+  }
+
+  to {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    left: -50%;
+    top: -50%;
+  }
+}

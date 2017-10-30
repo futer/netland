@@ -1,0 +1,115 @@
+.login::before, .login::after {
+    position: absolute;
+    top:0;
+}
+
+.login::before {
+    left: 0;
+    content: '';
+    background: url('../../assets/images/png/statyczny_left.png');
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100vh;
+    animation: pulse 5s infinite;
+}
+
+.login::after {
+    right: -5px;
+    content: '';
+    background: url('../../assets/images/png/statyczny_right.png');
+    background-repeat: no-repeat;
+    width:100px;
+    height: 100vh;
+    animation: pulse 5s infinite;
+}
+
+.login {
+    margin: -40px 0 -40px 20px;
+}
+
+.desc {
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.login-form {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 40%;
+    left: 30%;
+    right: 30%;
+    top: 40%;
+}
+
+.login-form input {
+    width: 100%;
+    height: 75px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #6d7c91;
+    color: #6d7c91;
+    font-size: 36px;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-form input[type="submit"] {
+    width: 315px;
+    height: 60px;
+    background: #007291;
+    font-size: 24px;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    text-align: left;
+    padding-left: 2em;
+    box-sizing: border-box;
+    margin-top: 70px;
+    font-family: 'HelveticaNeueLT Pro 65 Md', 'Roboto', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.login-form input:focus {
+    outline: none;
+    color: #FFF;
+    border-bottom-color: #FFF;
+}
+
+.error {
+    border-bottom-color: red;
+}
+
+.login-form input[type="password"] {
+    font-family: 'passfont';
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+    .menu .logo img{
+        display: none;
+    }
+
+    .login {
+        margin-top: 10px;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    .login-form input[type="submit"] {
+        width:100%;
+        text-align: center;
+        padding: 0;
+    }
+
+}
